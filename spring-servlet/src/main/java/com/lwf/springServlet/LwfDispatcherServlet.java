@@ -109,7 +109,7 @@ public class LwfDispatcherServlet extends HttpServlet {
                 if (!file.getName().endsWith(".class")) {
                     continue;
                 } else {
-                    scanClassNames.add(scanPackage + "." + file.getName().replaceAll("\\.class$", ""))
+                    scanClassNames.add(scanPackage + "." + file.getName().replaceAll("\\.class$", ""));
                 }
             }
         }
